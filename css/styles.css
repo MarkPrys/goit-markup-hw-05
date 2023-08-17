@@ -402,12 +402,12 @@ p.footer-text-subscribe {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-bottom: 16p;
 }
 .footer-form-input {
   width: 264px;
   height: 40px;
   flex-shrink: 0;
-
 
   border-radius: 4px;
   border: 1px solid var(--main-white-color);
@@ -417,7 +417,8 @@ p.footer-text-subscribe {
 
   color: var(--main-white-color);
   font-size: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  padding-left: 16p;
 
 }
 
