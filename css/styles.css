@@ -994,9 +994,8 @@ ul.list.team {
   width: 100%;
 }
 
-.modal-form .input-container {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
+.modal-form {
+
 }
 
 .input-container {
@@ -1023,7 +1022,7 @@ ul.list.team {
 
 .modal-form-icon-name, 
 .modal-form-icon {
-  transform: translate(15px, 10px);
+  transform: translate(-25px ,35px);
 }
 
  
@@ -1032,7 +1031,8 @@ ul.list.team {
   background: transparent;
   outline: none;
   padding-left: 36px;
-  border: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   width: 100%;
 }
 
