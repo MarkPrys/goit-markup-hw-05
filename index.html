@@ -452,7 +452,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button class="modal-button" type="button" data-modal-close>
         <svg class="modal-button-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-btn"></use>
@@ -472,7 +472,7 @@
             class="form-input"
             type="text" 
             name="user-name" />
-            <svg class="modal-form-icon-name" width="18" height="24">
+            <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person-icon"></use>
             </svg>
 
@@ -520,30 +520,35 @@
       <div class="modal-form-field-comment">
         <label 
         class="modal-form-label"
-        for="user-comment">Comment 
+        for="user-comment">
+        Comment 
+      </label>
           <textarea 
           name="comment_form" 
           class="form-input-comment" 
           id="user-comment"
           rows="10"
           placeholder="Text input"
-          ></textarea></label>
+          ></textarea>
       </div>
 
 
       <div class="modal-form-privacy">
         <input 
         id="user-privacy"
-        class="checkbox-form" 
+        class="checkbox-form visually-hidden" 
         type="checkbox" 
         value="true" 
         name="user-privacy" />
       <label 
       class="modal-form-agreement"
       for="user-privacy">
-      I accept the terms and conditions of the
-        <span class="modal-form-description"><a href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a> 
+        <span class="modal-form-description"> <svg class="form-checkbox" width="10" height="8">
+          <use href="./images/icons.svg#icon-policy-btn"></use>
+        </svg> 
         </span>
+        I accept the terms and conditions of the
+        <a class="policy-link" href="/">Privacy Policy</a>
       </label>
     </div>
 
