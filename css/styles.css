@@ -1062,6 +1062,10 @@ ul.list.team {
   fill: var(--logo-button-color); 
 }
 
+.modal-form-icon-name:focus {
+  fill: var(--logo-button-color);
+}
+
 .modal-form-field-comment {
   margin-bottom: 16px;
 }
