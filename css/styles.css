@@ -911,6 +911,7 @@ ul.list.team {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  padding: 72px 24px 24px 24px;
 }
 
 .is-hidden {
@@ -1003,12 +1004,9 @@ ul.list.team {
   width: 100%;
 }
 
-.modal-form .input-container {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-}
 
 .input-container {
+  position: relative;
   display: flex;
   margin-bottom: 8px;
 }
@@ -1019,6 +1017,7 @@ ul.list.team {
   margin-bottom: 8px;
 }
 .modal-form-field {
+  margin-bottom: 8px;
 }
 .modal-form-label {
   display: block;
@@ -1030,19 +1029,37 @@ ul.list.team {
   color: var(--lightslate);
 }
 
-.modal-form-icon-name, 
-.modal-form-icon {
-  transform: translate(10px, 10px);
-}
-
  
 .form-input {
   height: 40px;
   background: transparent;
-  outline: none;
-  padding-left: 16px;
-  border: none;
+  outline: transparent;
+  padding-left: 38px;
   width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 14px;
+  background-color: transparent; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4D5AE5; 
+}
+
+
+.modal-form-icon-name, 
+.modal-form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+.modal-form-icon-name:focus, 
+.modal-button-icon:focus {
+  fill: #4D5AE5; 
 }
 
 .form-input-comment {
